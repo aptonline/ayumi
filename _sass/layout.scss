@@ -685,3 +685,20 @@ footer {
 .hidden {
 	display: none;
 }
+
+.bottom-art {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bottom-art img {
+  display: block;
+  width: min(100vw, 1400px);
+  height: auto;
+  transform: translateY(var(--parallax, 0px));
+  will-change: transform;
+}

@@ -16,4 +16,12 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
+	<script>
+	const art = document.querySelector('.bottom-art img');
+
+window.addEventListener('scroll', () => {
+  const offset = window.scrollY * 0.05;
+  art.style.setProperty('--parallax', `${offset}px`);
+}, { passive: true });
+</script>
 </head>

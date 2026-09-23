@@ -685,27 +685,3 @@ footer {
 .hidden {
 	display: none;
 }
-
-.bottom-art {
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.bottom-art::before {
-  content: "";
-  position: absolute;
-
-  left: 50%;
-  bottom: -80px;
-
-  width: 700px;
-  height: 500px;
-
-  background: url("assets/appicon.png") center bottom / contain no-repeat;
-
-  transform:
-    translateX(-50%)
-    translateY(var(--offset, 80px));  
-}

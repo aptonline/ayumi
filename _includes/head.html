@@ -16,27 +16,4 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
-	<script>
-const art = document.querySelector(".bottom-art");
-const image = document.querySelector(".bottom-art");
-
-function updateParallax() {
-  const rect = art.getBoundingClientRect();
-
-  const progress = Math.max(
-    0,
-    Math.min(1, (window.innerHeight - rect.top) / window.innerHeight)
-  );
-
-  const offset = 80 - progress * 80;
-
-  art.style.setProperty("--offset", `${offset}px`);
-}
-
-window.addEventListener("scroll", updateParallax, {
-  passive: true
-});
-
-updateParallax();
-	</script>
-</head>
+	</head>

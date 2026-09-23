@@ -17,19 +17,27 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 	<script>
-window.addEventListener("scroll", () => {
-  const maxScroll =
-    document.documentElement.scrollHeight - window.innerHeight;
+const background = document.querySelector(".bottom-background");
 
-  const distanceFromBottom = maxScroll - window.scrollY;
+function updateParallax() {
+  const rect = background.getBoundingClientRect();
 
-  // Only affect it as you get near the bottom
-  const offset = Math.min(distanceFromBottom * 0.05, 40);
-
-  document.body.style.setProperty(
-    "--parallax",
-    `${offset}px`
+  // 0 when entering viewport → 1 when reaching bottom
+  const progress = Math.max(
+    0,
+    Math.min(1, 1 - rect.top / window.innerHeight)
   );
-}, { passive: true });
+
+  // Rise by up to 100px
+  const offset = (1 - progress) * 100;
+
+  background.style.transform = `translateY(${offset}px)`;
+}
+
+window.addEventListener("scroll", updateParallax, {
+  passive: true
+});
+
+updateParallax();
 	</script>
 </head>

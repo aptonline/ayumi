@@ -18,15 +18,8 @@
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 	<script>
 window.addEventListener("scroll", () => {
-  const maxScroll =
-    document.documentElement.scrollHeight - window.innerHeight;
-
-  const progress = window.scrollY / maxScroll;
-
-  // Moves through a subtle 40px range
-  const offset = (progress - 0.5) * 40;
-
-  document.body.style.setProperty("--parallax", `${offset}px`);
+  const parallax = window.scrollY * 0.08;
+  document.body.style.setProperty("--parallax", `${parallax}px`);
 });
 	</script>
 </head>

@@ -18,8 +18,18 @@
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 	<script>
 window.addEventListener("scroll", () => {
-  const parallax = window.scrollY * 0.08;
-  document.body.style.setProperty("--parallax", `${parallax}px`);
-});
+  const maxScroll =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  const distanceFromBottom = maxScroll - window.scrollY;
+
+  // Only affect it as you get near the bottom
+  const offset = Math.min(distanceFromBottom * 0.05, 40);
+
+  document.body.style.setProperty(
+    "--parallax",
+    `${offset}px`
+  );
+}, { passive: true });
 	</script>
 </head>

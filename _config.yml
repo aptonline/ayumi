@@ -44,7 +44,7 @@ features                                  :
 
   - title                                 : Guided face alignment
     description                           : Use the front camera with an on-screen guide that helps keep your face position steady from frame to frame.
-    fontawesome_icon_name                 : face-smile
+    fontawesome_icon_name                 : face
 
   - title                                 : Automatic capture
     description                           : Ayumi checks face and eye clarity, then captures automatically when you are lined up and ready.
@@ -56,7 +56,7 @@ features                                  :
 
   - title                                 : Home Screen widgets
     description                           : Keep today’s status, your best streak, and your favourite earned trophy visible on your Home Screen.
-    fontawesome_icon_name                 : table-cells-large
+    fontawesome_icon_name                 : table
 
   - title                                 : Playback and sharing
     description                           : Watch your aligned photos come together, then export the finished sequence as a video or GIF.

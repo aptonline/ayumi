@@ -16,14 +16,15 @@
                             </clipPath>
                         </svg>
 
-                        <div class="videoContainer hidden">
-                            <video <video class="screenvideo" autoplay muted playsinline>
-                            </video>
-                        </div>  
-                        
-                        <img class="iphoneScreen hidden" src="" alt="">
+                       <div class="videoContainer hidden">
+    <video class="screenvideo" autoplay muted playsinline></video>
+</div>
 
-                        {% include screencontent.html %}
+<div class="screenshotContainer hidden">
+    <img class="iphoneScreen" src="" alt="Ayumi app screenshot">
+</div>
+
+{% include screencontent.html %}
 
                     </div>
                     <div class="appInfo">
@@ -63,15 +64,5 @@
                 </div>
             </div>
         </div>
-        <script>
-  const video = document.querySelector('.screenvideo');
-
-  video.addEventListener('ended', () => {
-    setTimeout(() => {
-      video.currentTime = 0;
-      video.play();
-    }, 5000); // 5-second pause
-  });
-</script>
-</body>
+       </body>
 </html>

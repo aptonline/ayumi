@@ -1,47 +1,114 @@
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-{% for file in site.static_files %}
-    {% if file.path contains 'assets/screenshot/' %}
-        <script>
-            $(function() {
-                $(".iphoneScreen").attr('src', '{{ site.github.baseurl }}{{ file.path }}');
-                $(".iphoneScreen").removeClass("hidden");
-                console.log("{{ file.path }}");
+<script>
+$(function () {
+
+    const screenshots = [
+        {% for file in site.static_files %}
+            {% if file.path contains 'assets/screenshot/' %}
+                "{{ site.github.baseurl }}{{ file.path }}",
+            {% endif %}
+        {% endfor %}
+    ];
+
+    const videos = [
+        {% for file in site.static_files %}
+            {% if file.path contains 'assets/videos/' %}
+                {% unless file.path contains 'Place-video-files-here.txt' %}
+                    {% if file.extname == ".mov" or file.extname == ".mp4" or file.extname == ".ogg" or file.extname == ".webm" %}
+                        {
+                            src: "{{ site.github.baseurl }}{{ file.path }}",
+                            type: "{% if file.extname == '.ogg' %}video/ogg{% elsif file.extname == '.webm' %}video/webm{% else %}video/mp4{% endif %}"
+                        },
+                    {% endif %}
+                {% endunless %}
+            {% endif %}
+        {% endfor %}
+    ];
+
+    const video = document.querySelector(".screenvideo");
+    const videoContainer = document.querySelector(".videoContainer");
+    const screenshotContainer = document.querySelector(".screenshotContainer");
+    const screenshot = document.querySelector(".iphoneScreen");
+
+    const SCREENSHOT_DURATION = 3000;
+    const END_VIDEO_PAUSE = 1500;
+
+    let screenshotIndex = 0;
+
+    function showVideo() {
+        screenshotContainer.classList.add("hidden");
+        videoContainer.classList.remove("hidden");
+
+        video.currentTime = 0;
+
+        const playPromise = video.play();
+
+        if (playPromise !== undefined) {
+            playPromise.catch(function () {
+                console.log("Video autoplay was prevented.");
             });
-        </script>
-    {% elsif file.path contains 'assets/videos/' %}
-        {% unless file.path contains 'assets/videos/Place-video-files-here.txt' %}
-            <script>
-                $(function() {
-                    $(".iphoneScreen").addClass("hidden");
-                    console.log("remove screenshot");
-                });
-            </script>
-        {% endunless %}
-        {% if file.extname == ".mov" or file.extname == ".mp4" %}
-            <script>
-                $(function() {
-                    $(".videoContainer").removeClass("hidden");
-                    $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/mp4">');
-                    console.log("{{ file.path }}");
-                });
-            </script>
-        {% elsif file.extname == ".ogg" %}
-            <script>
-                $(function() {
-                    $(".videoContainer").removeClass("hidden");
-                    $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/ogg">');
-                    console.log("{{ file.path }}");
-                });
-            </script>
-        {% elsif file.extname == ".webm" %}
-        <script>
-            $(function() {
-                $(".videoContainer").removeClass("hidden");
-                $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/webm">');
-                console.log("{{ file.path }}");
-            });
-        </script>
-        {% endif %}
-    {% endif %}
-{% endfor %}
+        }
+    }
+
+    function showScreenshot() {
+        videoContainer.classList.add("hidden");
+        screenshotContainer.classList.remove("hidden");
+
+        screenshot.src = screenshots[screenshotIndex];
+
+        setTimeout(function () {
+
+            screenshotIndex++;
+
+            if (screenshotIndex < screenshots.length) {
+                showScreenshot();
+            } else {
+                screenshotIndex = 0;
+                showVideo();
+            }
+
+        }, SCREENSHOT_DURATION);
+    }
+
+    if (videos.length > 0) {
+
+        videos.forEach(function (item) {
+            const source = document.createElement("source");
+            source.src = item.src;
+            source.type = item.type;
+            video.appendChild(source);
+        });
+
+        video.load();
+
+        video.addEventListener("ended", function () {
+
+            if (screenshots.length > 0) {
+
+                setTimeout(function () {
+                    screenshotIndex = 0;
+                    showScreenshot();
+                }, END_VIDEO_PAUSE);
+
+            } else {
+
+                setTimeout(showVideo, END_VIDEO_PAUSE);
+
+            }
+
+        });
+
+        showVideo();
+
+    } else if (screenshots.length > 0) {
+
+        screenshotIndex = 0;
+        showScreenshot();
+
+    }
+
+});
+</script>
+```

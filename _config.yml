@@ -54,7 +54,7 @@ features                                  :
 
   - title                                 : Streaks that stay motivating
     description                           : Build a daily streak, track your best run, and keep your progress visible with home-screen widgets.
-    fontawesome_icon_name                 : day
+    fontawesome_icon_name                 : calendar
 
   - title                                 : Trophies for milestones
     description                           : Earn visual rewards as your streak grows, then pin your favourite trophy to the widget showcase.

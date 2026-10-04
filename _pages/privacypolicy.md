@@ -5,56 +5,86 @@ include_in_header: false
 ---
 
 **Last updated**  
-August 1 2019
+October 4th 2026
 
-# Privacy Policy
-Submissive a when owing much far bawdy thanks impolitely alas overlaid one and this one chuckled darn on more due much misheard amused far far the much purposeful that wildebeest dalmatian and piranha bluebird this and much despite however much sincere nonsensical this paradoxically more.
+# Ayumi Privacy Policy
 
-**Please note:** This is purely a dummy Privacy Policy that serves as an example for how you can use this app landing page generator. Please replace the contents with your own privacy policy.
+**Effective date:** [Insert effective date]
 
-<br>
+Ayumi is designed as a private daily photo journal. The app helps you capture a daily photo, build a streak, review your timeline, and export playback from photos stored on your device.
 
-## 1.0 Information We Collect
-Far near but lighted walking far oyster hello kneeled flung and roadrunner and more witless narrowly flexed brokenly blandly much in famous jeez obsessive that.
+Ayumi does not require an account, does not provide a social feed, and does not sell user data.
 
-### 1.1 Information from third parties
-- Ouch until smirked some some newt that at frustrating.
-- Nimbly handsomely fabulously python.
-- Alas informally taped when a dear some.
+## Information Ayumi stores
 
-### 1.2 Information you provide to us 
-Menacingly much walrus far together derisive falcon the toneless unceremoniously yet yikes a hung when because far drooled cast amused naughtily quiet hare a thickly more dogged drank more this dismounted since hence nakedly jeez rolled far gerbil the hey puerilely where vociferously struck insane much twitched instead some beneath then wiped dull snuffed far jeez nightingale bit goodness obscurely quit that much yet nefarious careless some concrete shrewdly gull closed this hugged aboard.
+Ayumi stores the photos you capture in the app, along with local information needed to display your timeline, streaks, trophies, reminders, widgets, and playback settings.
 
-<br>
+This information is stored locally on your device.
 
-## 2.0 What Personal Information we collect about you and how we collect it
-Where cut one reproachful alas ambiguous helpful hen raucous editorial underwrote dubiously therefore this boastfully or possessively oh modest amidst some opposite far wasp grew emu snickered some jeepers and circa much that *equitable* foul camel caudally oh opossum far dear met far much close hello beheld facetious far goodness tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming or well approving sympathetically groundhog mongoose and deeply peaceful wow ouch far regally this and near and badly fatal blunt mischievously and and the blew.
+## Photos
 
-### 2.1 Third Parties we collect information from
-Various remotely save this querulously explicitly one this and far congenially broad grew said or abhorrently haltered darn beheld panther shrank and one goldfish the more away as much different moth.
+Photos captured in Ayumi are stored on your device.
 
-| Third Party | What is it used for? |
-| :--- | :--- |
-| Falcon | Tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming. |
-| Eagle | Juggled crud a however overslept vehemently kept indisputably anteater walked alas or into. |
+Ayumi does not upload your photo history to an Ayumi server. Your photos are used inside the app to show your timeline, calculate streaks, align playback, and create exports you choose to save or share.
 
-<br>
+## Camera access
 
-## 3.0 What rights do you, as the data subject, have
-This goodness well well and more cowardly lynx credibly more apart save and less oh examined ouch marginal growled and proper liberally salmon busy some while pointed far because understood.
+Ayumi asks for camera access so you can take daily photos inside the app.
 
-1. Boastfully or possessively oh modest amidst.
-2. Far far the much purposeful that wildebeest dalmatian.
-3. Adamant or pushed less far overthrew.
+Camera access is used for capture, face positioning, face and eye clarity checks, and photo alignment. Camera data is processed on your device.
 
-All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+## Photo Library access
 
-<br>
+Ayumi may ask for Photo Library access when you choose to save an exported video or GIF, or when you use local image import or setup workflows.
 
-## 4.0 How we store and secure the Personal Information we collect
-Worm where gravely behind logically far in tastefully as alas delicately before well darn then far the much pulled red-handed circa much much far pangolin spelled much clung dachshund smirked close some the adamant or pushed less far overthrew in moth begrudging warthog newt pragmatic bent darn and far needlessly notwithstanding angrily as celestially horse rebuking magnanimous dear inscrutably jeepers listless before saucy this much however and wolf dear cringed crab a wanton jeepers flatteringly characteristically a atrocious and returned more lemming robin let some crud that more secure nimble where soundly pitiful because bombastic much.
+Ayumi only uses Photo Library access for features you choose to use.
 
-<br>
+## Notifications
 
-## 5.0 Information processing and transfers for EEA individuals
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh.
+Ayumi may ask for notification permission so it can send an optional daily reminder at the time you choose.
+
+You can change notification permissions at any time in iOS Settings.
+
+## Widgets
+
+Ayumi shares limited local information with its Home Screen widgets so they can display your current streak, best streak, today’s status, and selected trophy.
+
+Widget information is stored locally on your device.
+
+## In-app purchases
+
+Ayumi may offer optional tip purchases through Apple’s in-app purchase system.
+
+Purchases are processed by Apple. Ayumi does not receive your full payment card details.
+
+## Analytics and tracking
+
+Ayumi does not track you across apps or websites.
+
+Ayumi does not require an account and does not sell your personal information.
+
+## Children’s privacy
+
+Ayumi is not designed to collect personal information from children. The app does not require an account or ask users to create a public profile.
+
+## Data sharing
+
+Ayumi does not sell your data.
+
+Ayumi does not upload your photo history to an Ayumi server. If you choose to export or share a video, GIF, or image, that action is controlled by you through iOS sharing or saving features.
+
+## Deleting your data
+
+You can delete photos and app data from inside Ayumi where deletion controls are provided.
+
+You can also remove Ayumi and its local data from your device by deleting the app from iOS.
+
+## Changes to this policy
+
+This privacy policy may be updated as Ayumi changes. Any updates will be posted on this page with a revised effective date.
+
+## Contact
+
+For support or privacy questions, contact:
+
+**[Insert support email]**

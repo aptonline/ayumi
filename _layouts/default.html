@@ -17,7 +17,7 @@
                         </svg>
 
                         <div class="videoContainer hidden">
-                            <video <video class="screenvideo" autoplay muted loop playsinline>
+                            <video <video class="screenvideo" autoplay muted playsinline>
                             </video>
                         </div>  
                         
@@ -63,5 +63,15 @@
                 </div>
             </div>
         </div>
+        <script>
+  const video = document.querySelector('.screenvideo');
+
+  video.addEventListener('ended', () => {
+    setTimeout(() => {
+      video.currentTime = 0;
+      video.play();
+    }, 2000); // 2-second pause
+  });
+</script>
 </body>
 </html>

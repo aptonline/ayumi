@@ -84,14 +84,5 @@ This privacy policy may be updated as Ayumi changes. Any updates will be posted 
 
 For support or privacy questions, contact:
 
- <span id="privacy-email"></span>
-  
-  <script>
-  const user = "apt";
-  const domain = "mac.com;
+<a href="mailto:&#97;&#112;&#116;&#64;&#109;&#97;&#99;&#46;&#99;&#111;&#109;">&#97;&#112;&#116;&#64;&#109;&#97;&#99;&#46;&#99;&#111;&#109;</a>
 
-  const email = `${user}@${domain}`;
-
-  document.getElementById("privacy-email").innerHTML =
-    `<a href="mailto:${email}">${email}</a>`;
-</script>

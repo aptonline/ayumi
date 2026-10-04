@@ -4,12 +4,9 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated**  
-October 4th 2026
-
 # Ayumi Privacy Policy
 
-**Effective date:** [Insert effective date]
+**Effective date:** October 4th 2026
 
 Ayumi is designed as a private daily photo journal. The app helps you capture a daily photo, build a streak, review your timeline, and export playback from photos stored on your device.
 
@@ -59,7 +56,7 @@ Purchases are processed by Apple. Ayumi does not receive your full payment card 
 
 ## Analytics and tracking
 
-Ayumi does not track you across apps or websites.
+Ayumi does not track you across apps.
 
 Ayumi does not require an account and does not sell your personal information.
 

@@ -45,7 +45,7 @@ features                                  :
     
   - title                                 : Auto-magical alignment
     description                           : The app automatically aligns to your eyes, keeping everything in place.
-.
+
     fontawesome_icon_name                 : magic
 
   - title                                 : Watch your progress

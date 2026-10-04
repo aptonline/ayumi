@@ -43,7 +43,7 @@ features                                  :
     fontawesome_icon_name                 : camera
 
   - title                                 : Guided face alignment
-    description                           : Use the front camera with an on-screen guide that helps keep your face position steady from frame to frame.
+    description                           : Use the front camera with an on-screen guide to keep your face position steady. Ayumi automatically aligns each photo, keeping every frame perfectly matched from day to day.
     fontawesome_icon_name                 : expand
 
   - title                                 : Automatic capture
